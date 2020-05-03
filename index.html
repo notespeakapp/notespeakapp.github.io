@@ -234,18 +234,21 @@
 			<div class="six columns">
 				<form id="contactForm" action="https://formspree.io/xbjzjllr" method="POST">
 					<div class="inner">
-						<input name="senderName" id="senderName" required="required" type="text" placeholder="Name" />
+						<!--<input name="senderName" id="senderName" required="required" type="text" placeholder="Name" />-->
+						<input type="text" name="name">
 					</div>
 
 					<div class="inner">
-						<input type="email" name="senderEmail" id="senderEmail" placeholder="Email address" required="required" />
+						<!--<input type="email" name="senderEmail" id="senderEmail" placeholder="Email address" required="required" />-->
+						<input type="email" name="_replyto">
 					</div>
 
 					<div class="inner">
-						<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+						<!--<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>-->
+						<input type="text" name="name">
 					</div>
-					
-					<input type="submit" id="sendMessage" name="sendMessage" value="Submit message" />
+					<input type="submit" value="Send">
+					<!--<input type="submit" id="sendMessage" name="sendMessage" value="Submit message" />-->
 				</form>
 				<div id="sendingMessage" class="statusMessage"><p>We are sending your message!</p></div>
 				<div id="successMessage" class="successmessage"><p><span class="success-ico"><i class="icon-ok-circle"></i></span> Your message has been sent! We'll get back to you as soon as possible.</p></div>
